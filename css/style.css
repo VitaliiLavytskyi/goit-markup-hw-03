@@ -59,8 +59,11 @@ h6 {
     cursor: pointer;
 }
 
-.contacts{
+.contacts .link{
     color: var(--grey-color);
+}
+
+.contacts{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142em;
@@ -112,10 +115,13 @@ h6 {
     line-height: 1.142em;
     letter-spacing: 0.02em;
 
-    margin: 24px 331px 25px 15px;
+    margin: 24px 331px 25px 0px;
 
     display: flex;
     align-items: center;
+}
+.nav-list li:first-child{
+    margin-right: 93px;
 }
 .nav-list li:nth-child(n+2){
     margin-left: 20px;
@@ -173,6 +179,10 @@ h6 {
     text-decoration: none;
 }
 
+.lower-line .company-name{
+    display: inline-block;
+    margin-top: 60px;
+}
 .lower-line span{
     color: var(--white-color) ;
 }
@@ -182,6 +192,9 @@ h6 {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714em;
+    margin-top: 20px;
+
+    display: inline-block;
 }
 
 .post-address{
@@ -193,6 +206,13 @@ h6 {
     letter-spacing: 0.03em;
 }
 
+.lower-line .list li:first-child{
+    margin: 9px 0;
+}
+
+.lower-line .list li:last-child{
+    margin-bottom: 60px;
+}
 /* Lower line */
 
 /* COMMON SELECTORS */
@@ -330,6 +350,7 @@ h6 {
 
 /* PORTFOLIO PAGE */
 
+.portfolio-button-all,
 .portfolio-button{
     color: var(--black-color);
     background-color: var(--ash-grey-color);
@@ -341,28 +362,37 @@ h6 {
     letter-spacing: 0.03em;
     border-style: none;
     border-radius: 4px;
+    padding: 8px 22px;
 }
 
 .portfolio-button-all{
     color: var(--white-color);
     background-color: var(--blue-color);
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625em;
-    text-align: center;
-    letter-spacing: 0.03em;
-    border-style: none;
-    border-radius: 4px;
+}
+
+.filter{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 280px;
+}
+
+.filter li:nth-child(n+2){
+    margin-left: 8px;
 }
 
 
-/* .filter li{
-    display: inline;
-} */
+.portfolio .projects li{
+    border: 1px solid var(--ash-grey-color);
+    display: inline-flex;
+    
+}
 
-/* .portfolio .main-list{
-    display: inline;
-} */
+.portfolio h3{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+.portfolio p{
+    margin-bottom: 20px;
+}
 
 /* PORTFOLIO PAGE */
