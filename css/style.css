@@ -383,8 +383,7 @@ h6 {
 
 .portfolio .projects li{
     border: 1px solid var(--ash-grey-color);
-    display: inline-flex;
-    
+    display:inline-flex;
 }
 
 .portfolio h3{
