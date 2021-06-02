@@ -100,10 +100,14 @@ h6 {
 
 /* Upper line */
 
-.upper-line{
+.header{
     border-bottom: 1px solid var(--header-underline-color);
+}
+
+.upper-line{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .upper-line span{
     color: var(--black-color);
@@ -121,11 +125,11 @@ h6 {
     align-items: center;
 }
 .nav-list li:first-child{
-    margin-right: 93px;
+    padding-right: 93px;
 }
 .nav-list li:nth-child(n+2){
-    margin-left: 20px;
-    margin-top: 8px;
+    padding-left: 20px;
+    padding-top: 8px;
 }
 
 .nav-list .link:hover,
@@ -172,6 +176,8 @@ h6 {
 
 /* Lower line */
 .lower-line {
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--bg-black-color);
 }
 
@@ -180,7 +186,7 @@ h6 {
 }
 
 .lower-line .company-name{
-    display: inline-block;
+    display: block;
     margin-top: 60px;
 }
 .lower-line span{
@@ -189,9 +195,6 @@ h6 {
 
 .address-list {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714em;
     margin-top: 20px;
 
     display: inline-block;
@@ -235,6 +238,7 @@ h6 {
 /* Title section */
 .title-section{
     background-color: var(--bg-black-color);
+    padding: 200px 0;
 }
 
 .main-title{
@@ -245,11 +249,13 @@ h6 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 106px 0 30px 0px;
+    margin: 0px 0 30px 0px;
 }
 
 
 .order-service{
+    display: flex;
+    justify-content: center;
     width: 200px;
     background-color: var(--blue-color);
     color: var(--white-color);
@@ -261,7 +267,7 @@ h6 {
     border: none;
     border-radius: 4px;
     padding: 10px 0px;
-    margin: 0 500px;
+    margin: 0 auto;
 }
 .order-service:hover,
 .order-service:focus{
@@ -295,10 +301,13 @@ h6 {
     margin-top: 10px;
 }
 
-
 /* Features section */
 
 /* What we do section */
+
+.what-we-do{
+padding-top: 0;
+}
 
 .what-we-do .list{
     display: flex;
@@ -334,14 +343,21 @@ h6 {
     margin-left: 30px;
 }
 
-.team-section .employee-name{
-    margin-top: 30px;
-    margin-bottom: 10px;
+.team-section .paragraph{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.188;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
 }
 
-.team-section .employee-name,
-.team-section .paragraph{
-    text-align: center;
+.team-section .list .text{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Our team section */
@@ -365,6 +381,12 @@ h6 {
     padding: 8px 22px;
 }
 
+.portfolio-button:hover,
+.portfolio-button:focus{
+    color: var(--white-color);
+    background-color: var(--hover-color);
+}
+
 .portfolio-button-all{
     color: var(--white-color);
     background-color: var(--blue-color);
@@ -372,18 +394,40 @@ h6 {
 
 .filter{
     display: flex;
+    justify-content: center;
     margin-bottom: 50px;
-    margin-left: 280px;
 }
 
 .filter li:nth-child(n+2){
     margin-left: 8px;
 }
 
+/* .portfolio .projects {
+    display: inline-flex;
+} */
 
-.portfolio .projects li{
+.portfolio .projects{
+    display: flex;
+    margin-block: 0;
+    padding-inline: 0;
+    margin-inline: 0;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.projects li{
+    display: inline-flex;
+    max-width: 370px;
     border: 1px solid var(--ash-grey-color);
-    display:inline-flex;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.projects li:nth-child(3n+3){
+    margin-right: 0;
 }
 
 .portfolio .title{
@@ -393,20 +437,30 @@ h6 {
     font-size: 18px;
     line-height: 2em;
     letter-spacing: 0.06em;
-
-    margin-left: 24px;
-    margin-top: 20px;
-    margin-bottom: 4px;
 }
+
 .portfolio .paragraph{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.875em;
+}
 
-    margin-bottom: 20px;
-    margin-left: 24px;
+.projects .paragraph{
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+}
+
+.portfolio .projects .text{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* PORTFOLIO PAGE */
